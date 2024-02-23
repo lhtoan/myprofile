@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --header-color:#171b22;
+    --bg1-color:#1f242d;
+    --bg2-color:#2d313a;
+    --bg3-color:#323946;
+    --text-color: #fff;
+    --h1-color: #FBA834;
+  }
+
+body{
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    box-sizing: border-box;
+    font-family: "Roboto Mono";
+    color: var(--text-color);
+}
+
+h1, h2{
+    font-weight: normal;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/* CSS header */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 10%;
+    background: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar{
+    margin: auto;
+}
+.navbar a{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 40px;
+    transition: 0.5s;
+    padding: 0.5rem;
+}
+
+.navbar a:hover,
+.navbar a.active{
+  background-color: #FBA834;
+}
+
+
+/* --------------------------Home -----------------------------------*/
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg1-color);
+}
+/* .box_home{
+    width: 80%;
+    height: 80%;
+    
+    margin: auto;
+    border-radius: 15px;
+
+} */
+
+.home_content{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* width: 90%;
+    height: 90%; */
+}
+
+.home_content h1{
+    color: var(--h1-color);
+    font-family: "Bungee", sans-serif;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.home img{
+    width: 470px;
+    height: 551px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+.about_me{
+    margin-top: 100px;
+}
+
+.about_me span{
+    color: var(--h1-color);
+}
+
+/* --------------------------Contact -----------------------------------*/
+.contact{
+    background: var(--bg2-color);
+}
+
+.heading{
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 3rem;
+    font-family: "Bungee", sans-serif;
+    color: #FBA834;
+}
+.contact_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 2rem 4rem;
+}
+
+
+.contact img{
+    width: 100px;
+    height: 100px;
+    margin: 0 20px;
+    transition: 0.4s;
+}
+
+.contact img:hover{
+    scale: 1.2;
+}
+
+
+/* --------------------------Project -----------------------------------*/
+.my_project{
+    background-color: var(--bg3-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project_box{
+    width: 15vw;
+    height: 15vh;
+    background-color: #FBA834;
+    border-radius: 15px;
+    
+}
+
+.project_box a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 15vh;
+    color: var(--text-color);
+    font-family: "Bungee", sans-serif;
+    font-size: 2rem;
+}
